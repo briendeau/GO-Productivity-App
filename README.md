@@ -7,7 +7,7 @@
 Access GO directly in your browser: [
 https://briendeau.github.io/GO-Productivity-App/](#) 
 
-**GO** is a sleek, intuitive productivity app designed to help you stay organized, focused, and efficient. Whether you're managing tasks, tracking habits, or optimizing your workflow, GO provides the tools you need to get things done.  
+**GO** is a sleek, intuitive productivity and discipline accountability app designed to help you stay organized, focused, and efficient with a strategic plan you write out and print each day to keep you on the right path.
 
 ---
 
