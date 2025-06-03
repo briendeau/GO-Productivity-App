@@ -1,0 +1,381 @@
+:root {
+  --primary: #0a0a0a;
+  --secondary: #ffffff;
+  --accent: #8b0000;
+  --accent-light: #a83232;
+  --highlight: #c5c5c5;
+  --border: #333333;
+  --panel-bg: rgba(20, 20, 20, 0.85);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--primary);
+  color: var(--secondary);
+  font-family: "Stardos Stencil", sans-serif;
+  line-height: 1.6;
+  min-height: 100vh;
+  background-image: radial-gradient(
+      circle at 10% 20%,
+      rgba(139, 0, 0, 0.07) 0%,
+      rgba(139, 0, 0, 0) 20%
+    ),
+    radial-gradient(
+      circle at 90% 80%,
+      rgba(139, 0, 0, 0.07) 0%,
+      rgba(139, 0, 0, 0) 20%
+    ),
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 1px,
+      rgba(20, 20, 20, 0.1) 1px,
+      rgba(20, 20, 20, 0.1) 2px
+    );
+  background-attachment: fixed;
+  padding: 10px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 2px solid var(--border);
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.rank-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: var(--accent);
+  padding: 5px 10px;
+  font-family: "Orbitron", sans-serif;
+  font-size: 0.8rem;
+  border: 1px solid var(--highlight);
+}
+
+h1 {
+  font-family: "Black Ops One", cursive;
+  font-size: 3.8rem;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-bottom: 10px;
+  text-shadow: 3px 3px 0 var(--accent);
+  background: linear-gradient(to bottom, #fff 30%, #ccc);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.tagline {
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.3rem;
+  color: var(--highlight);
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.mission-statement {
+  background-color: rgba(30, 30, 30, 0.7);
+  border: 1px solid var(--border);
+  padding: 20px;
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  box-shadow: 0 0 15px rgba(139, 0, 0, 0.3);
+  border-left: 4px solid var(--accent);
+}
+
+.mission-statement strong {
+  color: var(--accent-light);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.panel {
+  background-color: var(--panel-bg);
+  border: 1px solid var(--border);
+  padding: 25px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+  position: relative;
+  overflow: hidden;
+}
+
+.panel::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--accent);
+}
+
+.panel-title {
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--highlight);
+}
+
+.quote {
+  font-style: italic;
+  color: var(--highlight);
+  margin: 15px 0;
+  padding: 15px;
+  border-left: 3px solid var(--accent);
+  background-color: rgba(51, 51, 51, 0.3);
+}
+
+.quote-author {
+  text-align: right;
+  font-weight: bold;
+  color: var(--accent);
+  margin-top: 5px;
+  font-family: "Stardos Stencil", sans-serif;
+}
+
+textarea {
+  width: 100%;
+  background-color: rgba(10, 10, 10, 0.7);
+  color: var(--secondary);
+  border: 1px solid var(--border);
+  padding: 15px;
+  font-family: "Stardos Stencil", sans-serif;
+  font-size: 1.1rem;
+  resize: vertical;
+  margin-bottom: 15px;
+}
+
+#missionInput {
+  height: 150px;
+}
+
+#weeklyPlan,
+#longtermPlan {
+  height: 120px;
+}
+
+#notesInput {
+  height: 180px;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 10px rgba(139, 0, 0, 0.5);
+}
+
+button {
+  background: linear-gradient(to bottom, var(--accent), #700);
+  color: var(--secondary);
+  border: none;
+  padding: 12px 25px;
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 1px solid #500;
+  letter-spacing: 2px;
+  font-weight: bold;
+  margin: 5px;
+}
+
+button:hover {
+  background: linear-gradient(to bottom, #a00, #800);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(139, 0, 0, 0.4);
+}
+
+.timer-settings {
+  margin-bottom: 15px;
+}
+
+.timer-settings label {
+  font-family: "Orbitron", sans-serif;
+  margin-right: 10px;
+}
+
+.timer-settings select {
+  background-color: rgba(10, 10, 10, 0.7);
+  color: var(--secondary);
+  border: 1px solid var(--border);
+  padding: 8px;
+  font-family: "Stardos Stencil", sans-serif;
+  width: 100%;
+}
+
+.timer {
+  text-align: center;
+  font-family: "Orbitron", sans-serif;
+  font-size: 3rem;
+  margin: 20px 0;
+  padding: 15px;
+  background-color: rgba(10, 10, 10, 0.7);
+  border: 1px solid var(--border);
+  letter-spacing: 3px;
+  color: #0f0;
+  text-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+}
+
+.timer-controls {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.timer-controls button {
+  flex: 1;
+  padding: 12px;
+}
+
+.mission-log,
+.plan-display-area,
+.notes-display-area {
+  margin-top: 25px;
+}
+
+.log-entry,
+.plan-entry,
+.notes-entry {
+  background-color: rgba(30, 30, 30, 0.7);
+  border: 1px solid var(--border);
+  padding: 15px;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.log-entry::before,
+.plan-entry::before,
+.notes-entry::before {
+  content: "✪";
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  color: var(--accent);
+}
+
+.log-date,
+.plan-date,
+.notes-date {
+  font-family: "Orbitron", sans-serif;
+  color: var(--accent);
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+  padding-left: 15px;
+}
+
+.log-content,
+.plan-content,
+.notes-content {
+  padding: 10px;
+  padding-left: 20px;
+  white-space: pre-wrap;
+}
+
+.empty-log {
+  text-align: center;
+  color: var(--highlight);
+  padding: 20px;
+  font-style: italic;
+}
+
+.streak-counter {
+  text-align: center;
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.3rem;
+  margin-top: 20px;
+  padding: 15px;
+  background-color: rgba(10, 10, 10, 0.7);
+  border: 1px solid var(--border);
+}
+
+.streak-number {
+  font-size: 2.2rem;
+  color: var(--accent);
+  display: block;
+  margin-top: 5px;
+  text-shadow: 0 0 8px rgba(139, 0, 0, 0.7);
+}
+
+.plan-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.plan-actions button {
+  flex: 1;
+}
+
+#printPlan {
+  background: linear-gradient(to bottom, #1a5e1a, #0d3d0d);
+  border-color: #0a3;
+}
+
+#printPlan:hover {
+  background: linear-gradient(to bottom, #2a8e2a, #1a5e1a);
+}
+
+#clearAll {
+  background: linear-gradient(to bottom, #333, #111);
+  border-color: #555;
+}
+
+#clearAll:hover {
+  background: linear-gradient(to bottom, #444, #222);
+}
+
+footer {
+  padding: 30px 0;
+  margin-top: 40px;
+  border-top: 1px solid var(--border);
+  font-family: "Orbitron", sans-serif;
+  color: var(--highlight);
+  font-size: 0.9rem;
+}
+
+.jocko-signature {
+  font-family: "Stardos Stencil", sans-serif;
+  color: var(--accent);
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.system-status {
+  text-align: right;
+  font-family: "Orbitron", sans-serif;
+}
+
+.status-active {
+  color: #0f0;
+  text-shadow: 0 0 5px rgba(0, 255, 0, 0.5);
+}

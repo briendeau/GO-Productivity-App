@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MISSION CONTROL | Discipline Productivity System</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Orbitron:wght@400;700&family=Stardos+Stencil:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="rank-badge">OPERATIVE</div>
+        <h1>MISSION CONTROL</h1>
+        <div class="tagline">STRATEGIC PRODUCTIVITY HEADQUARTERS</div>
+      </header>
+
+      <div class="mission-statement">
+        <p>
+          <strong>COMMANDER'S BRIEFING:</strong> You have exactly
+          <span id="selectedTime">15</span> minutes each day to define and
+          deploy your mission. Happiness comes from progress toward your goals.
+          If you fail, try again. If you aren't making progress, try something
+          else. But do something in the right direction. Nothing happens unless
+          YOU MAKE IT HAPPEN.
+        </p>
+      </div>
+
+      <div class="grid">
+        <div class="panel">
+          <h2 class="panel-title">DAILY MISSION BRIEFING</h2>
+
+          <div class="quote">
+            "Discipline equals freedom. Act today for the tomorrow you want."
+            <div class="quote-author">- JOCKO WILLINK</div>
+          </div>
+
+          <p>
+            <strong>TACTICAL OBJECTIVES:</strong> Define your mission for today.
+            What will you accomplish? What will you learn? Be specific.
+          </p>
+
+          <textarea
+            id="missionInput"
+            placeholder="Enter today's mission objectives...&#10;&#10;Example:&#10;1. Complete chapter 3 of JavaScript course&#10;2. Research 3 potential clients&#10;3. 45-minute strength training"
+          ></textarea>
+
+          <button id="deployMission">DEPLOY MISSION</button>
+
+          <div class="streak-counter">
+            ACTIVE STREAK: <span class="streak-number">0</span> MISSIONS
+          </div>
+        </div>
+
+        <div class="panel">
+          <h2 class="panel-title">FOCUS COMMAND CENTER</h2>
+
+          <div class="quote">
+            "Don't count on motivation. Count on discipline. Execute with
+            precision."
+            <div class="quote-author">- JOCKO WILLINK</div>
+          </div>
+
+          <div class="timer-settings">
+            <label for="timeSelect">MISSION DURATION:</label>
+            <select id="timeSelect">
+              <option value="15">15 MINUTES (Quick Strike)</option>
+              <option value="30">30 MINUTES (Standard Op)</option>
+              <option value="45">45 MINUTES (Extended Mission)</option>
+              <option value="60">60 MINUTES (Deep Operation)</option>
+              <option value="120">120 MINUTES (Marathon)</option>
+            </select>
+          </div>
+
+          <div class="timer" id="timer">15:00</div>
+
+          <div class="timer-controls">
+            <button id="startTimer">INITIATE FOCUS</button>
+            <button id="resetTimer">RESET COMMAND</button>
+          </div>
+
+          <div class="mission-log">
+            <h3>MISSION ARCHIVE</h3>
+            <div id="logContainer">
+              <div class="empty-log">
+                No missions deployed yet. Brief your first operation!
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel">
+        <h2 class="panel-title">STRATEGIC COMMAND HEADQUARTERS</h2>
+
+        <div class="quote">
+          The more you practice, the better you get, the more freedom you have
+          to create.
+          <div class="quote-author">- JOCKO WILLINK</div>
+        </div>
+
+        <div class="grid">
+          <div>
+            <h3>WEEKLY OBJECTIVES</h3>
+            <textarea
+              id="weeklyPlan"
+              placeholder="Key objectives for this week..."
+            ></textarea>
+          </div>
+          <div>
+            <h3>LONG-TERM STRATEGIC TARGETS</h3>
+            <textarea
+              id="longtermPlan"
+              placeholder="3-month, 6-month, 1-year targets..."
+            ></textarea>
+          </div>
+        </div>
+
+        <div class="plan-display-area">
+          <h3>ACTIVE STRATEGIC PLANS</h3>
+          <div id="planDisplay">
+            <div class="empty-log">No strategic plans secured yet</div>
+          </div>
+        </div>
+
+        <div class="plan-actions">
+          <button id="savePlan">SECURE PLAN</button>
+          <button id="printPlan">PDF BATTLE PLAN</button>
+          <button id="clearAll">CLEAR ALL</button>
+        </div>
+      </div>
+
+      <div class="panel">
+        <h2 class="panel-title">INTELLIGENCE & NOTES</h2>
+        <textarea
+          id="notesInput"
+          placeholder="Record observations, insights, and tactical adjustments here..."
+        ></textarea>
+        <button id="saveNotes">SECURE INTELLIGENCE</button>
+
+        <div class="notes-display-area">
+          <h3>INTELLIGENCE ARCHIVE</h3>
+          <div id="notesDisplay">
+            <div class="empty-log">No intelligence recorded yet</div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grid">
+          <div>
+            <p>MISSION CONTROL v2.1 | &copy; Brian Riendeau 2025</p>
+            <p class="jocko-signature">
+              "DISCIPLINE EQUALS FREEDOM" - JOCKO WILLINK
+            </p>
+          </div>
+          <div class="system-status">
+            <div>
+              OPERATIONAL STATUS: <span class="status-active">GREEN</span>
+            </div>
+            <div>LAST UPDATE: <span id="lastUpdate">--:--:--</span></div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
