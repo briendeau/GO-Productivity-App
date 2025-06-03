@@ -17,7 +17,9 @@ https://briendeau.github.io/GO-Productivity-App/](#)
 ✅ **Habit Tracking** – Build positive routines with daily reminders.  
 ✅ **Pomodoro Timer** – Boost focus with built-in time management.  
 ✅ **PDF Document Planner** – Write out your goals in the forms and print out a pdf document to take with you.  
-✅ **Minimalist Design** – Clean interface for distraction-free productivity.  
+✅ **Minimalist Design** – Clean interface for distraction-free productivity.
+✅ **Local Storage Saving* – Keep your tasks saved even when you close the browser using local-storage. You can reset your data using the Clear button.
+
 
 *(Add more features as needed.)*  
 
