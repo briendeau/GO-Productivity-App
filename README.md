@@ -2,9 +2,10 @@
 
 # GO - Productivity App 🚀
 
-https://briendeau.github.io/GO-Productivity-App/
 
-![GO Logo](https://via.placeholder.com/150) *(Replace with your app's logo)*  
+### Web Version  
+Access GO directly in your browser: [
+https://briendeau.github.io/GO-Productivity-App/](#) 
 
 **GO** is a sleek, intuitive productivity app designed to help you stay organized, focused, and efficient. Whether you're managing tasks, tracking habits, or optimizing your workflow, GO provides the tools you need to get things done.  
 
@@ -27,48 +28,10 @@ https://briendeau.github.io/GO-Productivity-App/
 
 | Dashboard | Tasks | Timer |
 |-----------|-------|-------|
-| ![Dashboard](https://via.placeholder.com/300) | ![Tasks](https://via.placeholder.com/300) | ![Timer](https://via.placeholder.com/300) |  
-
-*(Replace with actual screenshots of your app.)*  
-
----
-
-## 🛠️ Installation  
-
-### Desktop (Windows/macOS/Linux)  
-1. Download the latest release from [GO Releases](https://github.com/yourusername/go/releases).  
-2. Run the installer and follow the setup instructions.  
-
-### Mobile (iOS/Android)  
-- **App Store**: [Download here](#) *(Add link when available)*  
-- **Google Play**: [Download here](#) *(Add link when available)*  
-
-### Web Version  
-Access GO directly in your browser: [https://go-app.com](#) *(Replace with your URL)*  
+| ![image](https://github.com/user-attachments/assets/21f9cb34-aeee-4447-92c2-cce960928759)
+ | ![image](https://github.com/user-attachments/assets/e8a82779-35fb-4499-be06-2b69924476cd) |
 
 ---
-
-## � Usage  
-
-1. **Sign Up / Log In**  
-   - Create an account or use guest mode.  
-2. **Add Tasks**  
-   - Click `+ New Task` and set deadlines.  
-3. **Track Habits**  
-   - Mark habits as complete daily.  
-4. **Use Timer**  
-   - Start a Pomodoro session for focused work.  
-
-*(Customize with your app’s actual workflow.)*  
-
----
-
-## 🌟 Why Choose GO?  
-
-✔ **Fast & Lightweight** – No unnecessary bloat.  
-✔ **Privacy-Focused** – Your data stays yours.  
-✔ **Customizable** – Themes, layouts, and more.  
-✔ **Offline Support** – Works without internet.  
 
 ---
 
@@ -77,8 +40,3 @@ Access GO directly in your browser: [https://go-app.com](#) *(Replace with your 
 GO is licensed under the **MIT License**. See [LICENSE](LICENSE) for details.  
 
 ---
-
-## 💬 Feedback & Support  
-
-- **Issues?** Report them [here](https://github.com/yourusername/go/issues).  
-- **Feature Requests
