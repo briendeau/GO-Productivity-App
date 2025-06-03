@@ -20,9 +20,6 @@ https://briendeau.github.io/GO-Productivity-App/](#)
 ✅ **Minimalist Design** – Clean interface for distraction-free productivity.
 ✅ **Local Storage Saving* – Keep your tasks saved even when you close the browser using local-storage. You can reset your data using the Clear button.
 
-
-*(Add more features as needed.)*  
-
 ---
 
 ## 📸 Screenshots  
